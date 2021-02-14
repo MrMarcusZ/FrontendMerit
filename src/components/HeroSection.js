@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Button } from './Button';
+import { LogOutButton } from './LogOutButton';
 import './HeroSection.css';
 
 function HeroSection(){
@@ -16,6 +17,12 @@ function HeroSection(){
                     buttonStyle='btn--outline'
                     buttonSize='btn--large'> SignUp/Login
                 </Button>
+                <LogOutButton 
+                    className='btns'
+                    buttonStyle='btn--outline'
+                    buttonSize='btn--large'>  
+                </LogOutButton> 
+
             </div>
         </div>
     )
