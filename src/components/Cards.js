@@ -3,7 +3,14 @@ import PostData from '../data/posts.json';
 import CardItem from './CardItem';
 import './Cards.css';
 
-function Cards(){
+
+
+const Cards = (props) => {
+
+    const info = props.info;
+    console.log(info);
+
+    
 
     return(
         <div className='cards'>
