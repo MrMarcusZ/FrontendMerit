@@ -7,7 +7,11 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
+<<<<<<< HEAD
     "cross-fetch": "^2.1.0",
+=======
+    "cross-fetch": "2.1.0",
+>>>>>>> e9dd2bbe6796c51b626ab83ed0da212011879bc3
     "react": "^17.0.1",
     "react-burger-menu": "^3.0.3",
     "react-dom": "^17.0.1",
