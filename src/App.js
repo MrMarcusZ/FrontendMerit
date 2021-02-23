@@ -10,7 +10,10 @@ import LogOutButton from './components/LogOutButton';
 import AccountHolder from './components/AccountHolder';
 import { useAuth0 } from '@auth0/auth0-react';
 
+import { Provider } from 'react-redux';
+import { ConfigureStore } from './redux/configureStore';
 
+const store = ConfigureStore();
 
 
 function App() {
