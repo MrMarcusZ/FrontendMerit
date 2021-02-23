@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.css';
 import {Link} from 'react-router-dom';
-import { useAuth0 } from '@auth0/auth0-react';
+import Home from './pages/Home';
 
 const STYLES = ['btn--primary', 'btn--outline'];
 
@@ -23,18 +23,18 @@ export const LogOutButton = ({
     ? buttonSize 
     : SIZES[0];
 
-    const { logout, isAuthenticated } = useAuth0();
+    
 
     return(
-        isAuthenticated && (
+        
             <button className={'btn ${checkButtonStyle} ${checkButtonSize}'}
-             onClick={() => logout()}
+             onClick={() => Home}
             type={type}>
                 {children}
                 Log Out
             </button>
 
-        )
+        
         
     )
 }

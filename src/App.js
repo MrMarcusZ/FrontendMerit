@@ -8,20 +8,18 @@ import UserPage from './components/pages/UserPage';
 import Button from './components/Button';
 import LogOutButton from './components/LogOutButton';
 import AccountHolder from './components/AccountHolder';
-import { useAuth0 } from '@auth0/auth0-react';
+
 
 
 
 
 function App() {
-  const { isLoading } = useAuth0();
-
-  if (isLoading) return <div>Loading...</div>
+  
   return (
     <>
     <Router>
       <Navbar />
-      <AccountHolder />
+      
       <Switch>
         <Route path='/' exact component=
         {Home} />
