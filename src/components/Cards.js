@@ -5,12 +5,13 @@ import './Cards.css';
 
 
 
-const Cards = (props) => {
+function Cards({bankinfo}) {
+    if(bankinfo == null){
+        var checking = `checking balance:${bankinfo.checkingBalance}`;
+    }else{
+        var checking = 'checking balance:N/A';
+    }
 
-    const info = props.info;
-    console.log(info);
-
-    
 
     return(
         <div className='cards'>
@@ -20,7 +21,7 @@ const Cards = (props) => {
                     <ul className="cards_items">
                         <CardItem
                         src="pictures/"
-                        text="JSON data here"
+                        text={checking}
                         /*text={PostData.map((postDetail, index) =>{
                             return<h1>{postDetail.balance}</h1>
                         })}*/

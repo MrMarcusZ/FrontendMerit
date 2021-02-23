@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './App.css';
 import Home from './components/pages/Home';
+import Login from './components/pages/Login';
+import UserPage from './components/pages/UserPage';
 import Button from './components/Button';
 import LogOutButton from './components/LogOutButton';
 import AccountHolder from './components/AccountHolder';
@@ -23,6 +25,8 @@ function App() {
       <Switch>
         <Route path='/' exact component=
         {Home} />
+        <Route path='/login' exact component=
+                {Login} />
       </Switch>
     </Router>
     </>
