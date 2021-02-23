@@ -8,7 +8,6 @@ import UserPage from './components/pages/UserPage';
 import Button from './components/Button';
 import LogOutButton from './components/LogOutButton';
 import AccountHolder from './components/AccountHolder';
-import { useAuth0 } from '@auth0/auth0-react';
 
 import { Provider } from 'react-redux';
 import { ConfigureStore } from './redux/configureStore';
@@ -16,15 +15,14 @@ import { ConfigureStore } from './redux/configureStore';
 const store = ConfigureStore();
 
 
-function App() {
-  const { isLoading } = useAuth0();
 
-  if (isLoading) return <div>Loading...</div>
+function App() {
+  
   return (
     <>
     <Router>
       <Navbar />
-      <AccountHolder />
+      
       <Switch>
         <Route path='/' exact component=
         {Home} />

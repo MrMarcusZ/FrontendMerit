@@ -18,7 +18,7 @@ function RenderAccount({bankinfo}){
                                     <JSONPretty data={user} />
                                 </div>
                                 <div>
-                                    <Cards />
+                                    
                                 </div>
                             </view>
 

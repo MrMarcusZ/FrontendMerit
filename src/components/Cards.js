@@ -1,5 +1,5 @@
 import React from 'react';
-import PostData from '../data/posts.json';
+
 import CardItem from './CardItem';
 import './Cards.css';
 
